@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #ffe6f0; /* Rosa claro */
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #ffb6c1; /* Rosa claro */
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #ffe6f0;
+    font-size: 1.2em;
+}
+
+/* Seção Sobre */
+#sobre {
+    background-color: #fff;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sobre h2 {
+    margin-bottom: 15px;
+    color: #ff69b4; /* Rosa forte */
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sobre p {
+    text-align: justify;
+    color: #555;
+    font-size: 1em;
+}
+
+/* Seção Livros */
+#livros {
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#livros h2 {
+    margin-bottom: 25px;
+    color: #ff69b4; /* Rosa forte */
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Barra de Pesquisa */
+.search-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#searchInput {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border: 2px solid #ffb6c1;
+    border-radius: 25px;
+    font-size: 1em;
+    transition: border 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #ff69b4; /* Rosa mais forte */
+    box-shadow: 0 0 5px rgba(255, 105, 180, 0.5);
+}
+
+/* Grade de Livros */
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* Estilos do Livro */
+.book {
+    background-color: #fad9e6; /* Rosa muito claro */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.book:hover img {
+    transform: scale(1.05);
+}
+
+.book-title {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #ff69b4; /* Rosa forte */
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.book-title:hover {
+    color: #ff1493; /* Tom mais escuro de rosa */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    color: #7f8c8d;
+    background-color: #ffb6c1; /* Rosa claro */
+    border-radius: 10px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
